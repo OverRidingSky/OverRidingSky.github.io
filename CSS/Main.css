@@ -1,0 +1,20 @@
+Body{
+   Height: 100%;
+   Width: 100%;
+   Background: RGB(25, 25, 200);
+}
+Header.TopFix{
+   Position: fixed;
+   Top: 0;
+   Left: 0;
+   Width: 100%;
+   Height: 32px;
+   Background: RGBA(50, 50, 50, 0.25);
+}
+Footer.BotFix{
+   Position: fixed;
+   Bottom: 0;
+   Left: 0;
+   Width: 100%;
+   Height: 32px;
+}
