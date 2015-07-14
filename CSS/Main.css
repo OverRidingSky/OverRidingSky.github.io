@@ -1,20 +1,28 @@
 Body{
-   Height: 100%;
-   Width: 100%;
-   Background: RGB(25, 25, 200);
+	Height: 100%;
+	Width: 100%;
+	Background: RGB(25, 25, 200);
+	margin: 0;
+	margin-top: 0; //add if Header#TopFix exsist> if(typeof document.getElementById("TopFix") != "undefined"){document.body.style.margin-top = "32px";}
+	margin-bottom: 0; //add if Footer#BotFix exsist> if(typeof document.getElementById("BotFix") != "undefind"){document.body.style.margin-bottom = "32px";}
 }
-Header.TopFix{
-   Position: fixed;
-   Top: 0;
-   Left: 0;
-   Width: 100%;
-   Height: 32px;
-   Background: RGBA(50, 50, 50, 0.25);
+Header#TopFix{
+	Position: fixed;
+	Top: 0;
+	Left: 0;
+	Width: 100%;
+	Height: 32px;
+	Background: RGBA(50, 50, 50, 0.25);
 }
-Footer.BotFix{
-   Position: fixed;
-   Bottom: 0;
-   Left: 0;
-   Width: 100%;
-   Height: 32px;
+Footer#BotFix{
+	Position: fixed;
+	Bottom: 0;
+	Left: 0;
+	Width: 100%;
+	Height: 32px;
+}
+Footer#Info{
+	Position: absolute;
+	Bottom: 0;
+	Left: 0;
 }
