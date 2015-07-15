@@ -1,4 +1,4 @@
-document.onLoad = pageSetup();
+document.body.onLoad = pageSetup();
 function pageSetup(){
 	marginFix();
 }
