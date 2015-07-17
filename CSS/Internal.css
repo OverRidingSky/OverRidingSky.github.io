@@ -3,8 +3,10 @@ html{
 	-webkit-filter: blur(10px);
 }
 Body{
+	margin-top: 0;
 	margin-left: auto;
 	margin-right: auto;
+	margin-bottom: 0;
 	width: 512px;
 	height: 100%;
 }
