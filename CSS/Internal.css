@@ -13,8 +13,8 @@ Body{
 }
 Div#crossBorders{
 	height: 100%;
-	max-height: 1024px;
-	min-height: 512px;
+	max-height: 576px;
+	min-height: 288px;
 	background: rgba(0, 0, 255, 0.2);
 	margin-top: auto;
 	margin-bottom: auto;
