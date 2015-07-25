@@ -14,7 +14,7 @@ function getScreenSize(){
 
 function fixHeight(){
 	h = getScreenSize()[1];
-	if(h > 1024)then{
+	if(h > 1024){
 		hFix = h-1024;
 		var marTop, marBot;
 		while(hFix > 0){
