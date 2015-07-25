@@ -11,7 +11,7 @@ Body{
 	height: 100%;
 	display: flex;
 }
-Div#backgroudHolder{
+Div#backgroundHolder{
 	z-index: -1;
 	position: absolute;
 	top: 0;
