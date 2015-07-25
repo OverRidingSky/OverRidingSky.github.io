@@ -21,5 +21,5 @@ function fixHeight(){
 }
 
 window.onresize = function(){
-	fixHeight();
+	//fixHeight();
 }
