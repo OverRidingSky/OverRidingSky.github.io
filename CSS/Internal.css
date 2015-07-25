@@ -12,6 +12,7 @@ Body{
 	height: 100%;
 }
 Div#crossBorders{
+	height: 100%;
 	max-height: 1024px;
 	min-height: 512px;
 	background: rgba(0, 0, 255, 0.2);
