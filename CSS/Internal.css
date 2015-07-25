@@ -8,6 +8,10 @@ Body{
 	margin-right: auto;
 	margin-bottom: 0;
 	max-width: 1024px;
-	min-width: 256px;
+	min-width: 512px;
 	height: 100%;
+}
+Canvas#crossBorders{
+	max-height: 1024px;
+	min-height: 512px;
 }
