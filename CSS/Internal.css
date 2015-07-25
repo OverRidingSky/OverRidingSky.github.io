@@ -16,4 +16,6 @@ Div#crossBorders{
 	max-height: 1024px;
 	min-height: 512px;
 	background: rgba(0, 0, 255, 0.2);
+	margin-top: auto;
+	margin-bottom: auto;
 }
