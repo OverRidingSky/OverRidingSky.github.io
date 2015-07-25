@@ -24,7 +24,6 @@ function fixHeight(){
 			hFix--;
 		}
 		document.getElementById('crossBorders').style.marginTop = marTop+"px";
-		document.getElementByIf('crossBorders').style.marginBottom = marBot+"px";
 	}
 }
 
