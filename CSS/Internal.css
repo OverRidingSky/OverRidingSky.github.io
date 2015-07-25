@@ -11,7 +11,7 @@ Body{
 	min-width: 512px;
 	height: 100%;
 }
-Canvas#crossBorders{
+Div#crossBorders{
 	max-height: 1024px;
 	min-height: 512px;
 	background: rgba(0, 0, 255, 0.2);
