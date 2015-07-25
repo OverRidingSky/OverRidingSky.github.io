@@ -1,25 +1,15 @@
 function getScreenSize(){
-	var width = window.innerWidth
-	|| document.documentElement.clientWidth
-	|| document.body.clientWidth;
-	
-	var height = window.innerHeight
-	|| document.documentElement.clientHeight
-	|| document.body.clientHeight;
+	var w = document.getElementById('crossBorders').offsetWidth;
+	var h = document.getElementById('crossBorders').offsetHeight;
 	return [
-		width,
-		height
+		w,
+		h
 	];
 }
 
-function fixHeight(){
-	h = getScreenSize()[1];
-	if(h > 1024){
-		hFix = ceil((h-1024)/2);
-		document.getElementById('crossBorders').style.marginTop = hFix + "px";
-	}
-}
-
-window.onresize = function(){
-	//fixHeight();
+function getParameterByName(name) {
+    name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+    var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+        results = regex.exec(location.search);
+    return results === null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
 }
