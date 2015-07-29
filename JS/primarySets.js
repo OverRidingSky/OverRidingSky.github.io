@@ -1,3 +1,4 @@
+"use strict";
 class cookie{
   function get(cname) {
     var name = cname + "=";
