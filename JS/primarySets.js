@@ -38,6 +38,4 @@ function setSkin(name){
     }
   }
 }
-document.onLoad = function(){
-  setSkin("Original0.1");
-}
+setSkin("Original0.1");
