@@ -1,5 +1,4 @@
-function cookie(){return true;}
-function cookie.get(cname) {
+function getCookie(cname) {
   var name = cname + "=";
   var ca = document.cookie.split(';');
   for(var i=0; i<ca.length; i++) {
@@ -9,8 +8,7 @@ function cookie.get(cname) {
   }
   return "";
 }
-
-function cookie.check(name) {
+function checkCookie(name) {
   var user = getCookie(name);
   if (user != "") {
     return true;
@@ -18,15 +16,14 @@ function cookie.check(name) {
     return false;
   }
 }
-function cookie.set(cname, cvalue, exdays) {
+function setCookie(cname, cvalue, exdays) {
   var d = new Date();
   d.setTime(d.getTime() + (exdays*24*60*60*1000));
   var expires = "expires="+d.toUTCString();
   document.cookie = cname + "=" + cvalue + "; " + expires;
 }
-function cookie.del(name){
+function delCookie(name){
   document.cookie = name + "=; expires=Thu, 01 Jan 1970 00:00:00 UTC";
-}
 }
 function setSkin(name){
   if(name == null || name == ""){
@@ -41,7 +38,3 @@ function setSkin(name){
     }
   }
 }
-function setSkin.help(){
-//log the help.
-}
-
