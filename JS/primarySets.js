@@ -29,12 +29,15 @@ function setSkin(name){
   if(name == null || name == ""){
     console.log("You're doing it wrong.");
   }else{
-    list = ["map/maplvl1","map/maplvl2","map/maplvl3"];
+    list = ["map/maplvl1","map/baseHouse"];
     for(i=0;i < list.length;i++){
       if(checkCookie(list[i])){
         delCookie(list[i]);
       }
-      setCookie(list[i], "http://overridingsky.github.io/Images/Skins/" + name + "/" + list[i] + ".jpg", 365);
+      setCookie(list[i], "http://overridingsky.github.io/Images/Skins/" + name + "/" + list[i] + ".png", 365);
     }
   }
+}
+document.onLoad = function(){
+  setSkin("Original0.1");
 }
