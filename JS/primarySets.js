@@ -38,7 +38,7 @@ class setSkin {
         if(cookie.check(list[i])){
         cookie.del(list[i]);
         }
-        cookie.set(list[i], "/Images/Skins/" + name + "/" + list[i] + ".jpg", 365);
+        cookie.set(list[i], "http://overridingsky.github.io/Images/Skins/" + name + "/" + list[i] + ".jpg", 365);
       }
     }
   }
