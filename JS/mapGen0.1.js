@@ -2,15 +2,20 @@ var Data = [];
 function Mapping(){
   function loadData(){
     var ca = document.cookie.split(';');
-    Dir = data[];
     for(var i=0; i<ca.length; i++) {
-	  If(ca[i].split('/').length != 1){
-      if(){
-        
+      Dir = Data[i];
+      d = 1;
+      while(ca[i].split('=')[1].split('/').length > d){
+        mdir = ca[i].split('=')[1].split('/');
+        if(Dir = "" || Dir = null){
+          Dir += "{" + mdir[d-1] + ":[]}";
+          
+        }else{
+          
+        }
+        d++;
       }
-	  }
 	}
     return "";
-	
   }
 }
