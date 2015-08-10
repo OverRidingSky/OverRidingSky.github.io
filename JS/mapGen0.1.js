@@ -5,6 +5,6 @@ function loadCookies(){
     if(i > 0 ){temp += ",";}
     temp += '{' + ca[i].split("=")[0] + ':"' + ca[i].split("=")[1] + '"}';
   }
-  return temp.parseJSON();
+  return JSON.parse(temp);
 }
 var data = loadCookies();
