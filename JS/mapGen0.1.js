@@ -1,4 +1,4 @@
-loadCookies(){
+function loadCookies(){
   ca = document.cookie.split(";");
   temp = "";
   for(i = 0; i < ca.length; i++){
