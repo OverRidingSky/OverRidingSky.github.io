@@ -1,21 +1,10 @@
-var Data = [];
-function Mapping(){
-  function loadData(){
-    var ca = document.cookie.split(';');
-    for(var i=0; i<ca.length; i++) {
-      Dir = Data[i];
-      d = 1;
-      while(ca[i].split('=')[1].split('/').length > d){
-        mdir = ca[i].split('=')[1].split('/');
-        if(Dir = "" || Dir = null){
-          Dir += "{" + mdir[d-1] + ":[]}";
-          
-        }else{
-          
-        }
-        d++;
-      }
-	}
-    return "";
+loadCookies(){
+  ca = document.cookie.split(";");
+  temp = "";
+  for(i = 0; i < ca.length; i++){
+    if(i > 0 ){temp += ",";}
+    temp += '{' + ca[i].split("=")[0] + ':"' + ca[i].split("=")[1] + '"}';
   }
+  return temp.parseJSON();
 }
+var data = loadCookies();
