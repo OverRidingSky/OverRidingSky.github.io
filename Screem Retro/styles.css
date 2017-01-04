@@ -1,0 +1,17 @@
+body{
+	background: rgb(109, 146, 177);
+}
+header{
+	position: absolute;
+	height: 35px;line-height: 35px;
+	width: 90%;
+	top: 0;
+	left: 5%;
+	background: rgba(0,0,0,0.3)
+}
+#btnSettings{
+	position: relative;
+	float: right;
+	height: 35px;
+	width: 35px;
+}
