@@ -1,0 +1,144 @@
+Html, Body, .LoadingCircle, .LoadingCircleT, .inner, .innerT1, .innerT2{
+	Height: 100%;
+	Width: 100%;
+	margin: 0;
+	background: #c0ffee;
+}
+
+@media (orientation: landscape){
+	.LoadingCircle{
+		background: #ff0000;
+		-webkit-clip-path: circle(11vh at 50% 50%);
+		clip-path: circle(11vh at 50% 50%);
+		-webkit-transition: all 1s ease-out; /* Safari */
+		transition: all 1s ease-out;
+		-webkit-animation: rainbow 8s infinite; /* Safari 4.0 - 8.0 */
+		animation: rainbow 8s infinite;
+	}
+	.LoadingCircleT{
+		background: #ff0000;
+		-webkit-clip-path: circle(65vh at 50% 50%);;
+		clip-path: circle(65vh at 50% 50%);;
+		-webkit-transition: all 1s ease-out; /* Safari */
+		transition: all 1s ease-out;
+		-webkit-animation: rainbow 8s infinite; /* Safari 4.0 - 8.0 */
+		animation: rainbow 8s infinite;
+	}
+	.inner{
+		background: #26004c;
+		-webkit-clip-path: circle(10vh at 50% 50%);
+		clip-path: circle(10vh at 50% 50%);
+		-webkit-transition: all 1s ease-out; /* Safari */
+		-webkit-transition-delay: .125s;
+		transition: all 1s ease-out;
+		transition-delay: .125s;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+	.innerT1{
+		background: #26004c;
+		-webkit-clip-path: circle(65vh at 50% 50%);
+		clip-path: circle(65vh at 50% 50%);
+		-webkit-transition: all 1s ease-out; /* Safari */
+		-webkit-transition-delay: .125s;
+		transition: all 1s ease-out;
+		transition-delay: .125s;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+	.innerT2{
+		background: #26004c;
+		-webkit-clip-path: circle(60vh at 50% 50%);
+		clip-path: circle(60vh at 50% 50%);
+		-webkit-transition: all 1s ease-in; /* Safari */
+		-webkit-transition-delay: .125s;
+		transition: all 1s ease-in;
+		transition-delay: .125s;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+	p{
+		margin: 0;
+		text-align: center;
+		color: #ffffff;
+		font-size: 13vh;
+		max-width: 100vh;
+	}
+}
+
+@media (orientation: portrait){
+	.LoadingCircle{
+		background: #ff0000;
+		-webkit-clip-path: circle(11vw at 50% 50%);
+		clip-path: circle(11vw at 50% 50%);
+		-webkit-transition: all 1s ease-out; /* Safari */
+		transition: all 1s ease-out;
+		-webkit-animation: rainbow 8s infinite; /* Safari 4.0 - 8.0 */
+		animation: rainbow 8s infinite;
+	}
+	.LoadingCircleT{
+		background: #ff0000;
+		-webkit-clip-path: circle(65vw at 50% 50%);;
+		clip-path: circle(65vw at 50% 50%);;
+		-webkit-transition: all 1s ease-out; /* Safari */
+		transition: all 1s ease-out;
+		-webkit-animation: rainbow 8s infinite; /* Safari 4.0 - 8.0 */
+		animation: rainbow 8s infinite;
+	}
+	.inner{
+		background: #26004c;
+		-webkit-clip-path: circle(10vw at 50% 50%);
+		clip-path: circle(10vw at 50% 50%);
+		-webkit-transition: all 1s ease-out; /* Safari */
+		-webkit-transition-delay: .125s;
+		transition: all 1s ease-out;
+		transition-delay: .125s;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+	.innerT1{
+		background: #26004c;
+		-webkit-clip-path: circle(65vw at 50% 50%);
+		clip-path: circle(65vw at 50% 50%);
+		-webkit-transition: all 1s ease-out; /* Safari */
+		-webkit-transition-delay: .125s;
+		transition: all 1s ease-out;
+		transition-delay: .125s;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+	.innerT2{
+		background: #26004c;
+		-webkit-clip-path: circle(60vw at 50% 50%);
+		clip-path: circle(60vw at 50% 50%);
+		-webkit-transition: all 1s ease-in; /* Safari */
+		-webkit-transition-delay: .125s;
+		transition: all 1s ease-in;
+		transition-delay: .125s;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+	p{
+		margin: 0;
+		text-align: center;
+		color: #ffffff;
+		font-size: 13vw;
+		max-width: 100vw;
+	}
+}
+
+@keyframes rainbow{
+	0%  {background: #FF0000;}
+	14% {background: #FF7F00;}
+	29% {background: #FFFF00;}
+	43% {background: #00FF00;}
+	57% {background: #0000FF;}
+	71% {background: #4B0082;}
+	86% {background: #9400D3;}
+}

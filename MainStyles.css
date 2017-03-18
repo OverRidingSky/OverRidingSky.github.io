@@ -1,33 +1,34 @@
 Header{
-  position: fixed;
-  background: rgba(50,100,125,0.3);
-  top: 0;
-  left: 10%;
-  width: 80%;
-  height: 50px;
+	position: fixed;
+	background: rgba(50,100,125,0.3);
+	top: 0;
+	left: 10%;
+	width: 80%;
+	height: 50px;
 }
 header > #title{
-  float: left;
-  height: 50px;
-  line-height: 50px;
-  text-align: center;
+	margin-left: 15px;
+	float: left;
+	height: 50px;
+	line-height: 50px;
+	text-align: center;
 }
 #postHolder{
-  position: absolute;
-  top: 50px;
-  left: calc(10% + 10px);
-  width: calc(80% - 20px);
-  background: rgba(0,0,0,0.1);
-  min-height: calc(100% - 50px);
+	position: absolute;
+	top: 50px;
+	left: calc(10% + 10px);
+	width: calc(80% - 20px);
+	background: rgba(0,0,0,0.1);
+	min-height: calc(100% - 50px);
 }
 #postHolder > #post{
-  background: #c0ffee;
-  margin-left: 10px;
-  margin-right: 10px;
-  margin-top: 5px;
-  margin-bottom: 5px;
-  box-shadow: 0px 0px 20px #28deff;
+	background: #c0ffee;
+	margin-left: 10px;
+	margin-right: 10px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	box-shadow: 0px 0px 20px #28deff;
 }
 Body{
-  background: rgb(200,200,200);
+	background: rgb(200,200,200);
 }
