@@ -39,6 +39,7 @@ function setEditText(){
 }
 window.onload = function() {
 	window.setTimeout(changeSize,8000);
+	setEditText();
 	document.getElementsByClassName("LoadingCircle")[0].getElementsByClassName("inner")[0].getElementsByTagName("p")[0].innerHTML = (8 - numOfIntervals).toString(); numOfIntervals++;
 	TickID = setInterval(function(){
 		document.getElementsByClassName("LoadingCircle")[0].getElementsByClassName("inner")[0].getElementsByTagName("p")[0].innerHTML = (8 - numOfIntervals).toString(); numOfIntervals++;}, 1000);
