@@ -33,7 +33,7 @@ function setEditText(){
     if(aa != "" && aa != null){
     	var bb = b64DecodeUnicode(aa);
 	    if(bb != "" && bb != null){
-		    EndingText = aa;
+		    EndingText = bb;
 	    }
     }
 }
