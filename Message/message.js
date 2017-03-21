@@ -12,6 +12,31 @@ function changeSize(){
 	clearInterval(TickID);
 	document.getElementsByTagName("p")[0].innerHTML = EndingText;
 }
+function getParameterByName(name, url) {
+    if (!url) {
+      url = window.location.href;
+    }
+    name = name.replace(/[\[\]]/g, "\\$&");
+    var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
+        results = regex.exec(url);
+    if (!results) return null;
+    if (!results[2]) return '';
+    return decodeURIComponent(results[2].replace(/\+/g, " "));
+}
+function b64DecodeUnicode(str) {
+    return decodeURIComponent(atob(str).split('').map(function(c) {
+        return '%' + ('00' + c.charCodeAt(0).toString(16)).slice(-2);
+    }).join(''));
+}
+function setEditText(){
+    var aa = getParameterByName("t");
+    if(aa != "" && aa != null){
+    	var bb = b64DecodeUnicode(aa);
+	    if(bb != "" && bb != null){
+		    EndingText = aa;
+	    }
+    }
+}
 window.onload = function() {
 	window.setTimeout(changeSize,8000);
 	document.getElementsByClassName("LoadingCircle")[0].getElementsByClassName("inner")[0].getElementsByTagName("p")[0].innerHTML = (8 - numOfIntervals).toString(); numOfIntervals++;
