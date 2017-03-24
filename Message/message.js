@@ -9,6 +9,7 @@ function makeFloating(){
 	para.className = "floatingObj";
 	para.style.left = (Math.floor(Math.random() * 100) + 0).toString() + "vw";
 	var element = document.getElementsByTagName("body")[0];
+	element.appendChild(para);
 	window.setTimeout(removeItem,10000,para,element);
 }
 function changeSize(){
