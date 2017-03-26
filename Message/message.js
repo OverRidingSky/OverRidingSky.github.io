@@ -1,6 +1,7 @@
 var EndingText = "This is the text that shows up after the timer is done...";
-var TickID;
+var TickID, IID;
 var numOfIntervals = 0;
+var amount = 8;
 function removeItem(para, element){
 	element.removeChild(para);
 }
@@ -9,10 +10,12 @@ function makeFloating(){
 	para.className = "floatingObj";
 	para.style.left = (Math.floor(Math.random() * 100) + 0).toString() + "vw";
 	var element = document.getElementsByTagName("body")[0];
-	element.appendChild(para);
+	var before = document.getElementsByClassName("loadingCircleT")[0];
+	element.insertBefore(para,before);
 	window.setTimeout(removeItem,10000,para,element);
 }
 function changeSize(){
+	clearInterval(TickID);
 	document.getElementsByClassName("LoadingCircle")[0].className = "LoadingCircleT";
 	document.getElementsByClassName("inner")[0].className = "innerT1";
 	window.setTimeout(function(){
@@ -20,9 +23,8 @@ function changeSize(){
 		document.getElementsByClassName("LoadingCircleT")[0].style.background = "#4B0082";
 		document.getElementsByClassName("innerT1")[0].className = "innerT2";
 		},1125);
-	clearInterval(TickID);
 	document.getElementsByTagName("p")[0].innerHTML = EndingText;
-	setInterval(makeFloating,1000);
+	IID = setInterval(makeFloating,500);
 }
 function getParameterByName(name, url) {
     if (!url) {
@@ -52,7 +54,7 @@ function setEditText(){
 window.onload = function() {
 	document.getElementsByTagName("p")[0].innerHTML = "?";
 	setEditText();
-	window.setTimeout(changeSize,8000);
+	window.setTimeout(changeSize,amount*1000);
 	document.getElementsByTagName("p")[0].innerHTML = (8 - numOfIntervals).toString(); numOfIntervals++;
 	TickID = setInterval(function(){
 		document.getElementsByTagName("p")[0].innerHTML = (8 - numOfIntervals).toString(); numOfIntervals++;}, 1000);

@@ -20,8 +20,8 @@ Html, Body, .LoadingCircle, .LoadingCircleT, .inner, .innerT1, .innerT2{
 }
 .LoadingCircleT{
 	background: #ff0000;
-	-webkit-clip-path: circle(65vmin at 50% 50%);;
-	clip-path: circle(65vmin at 50% 50%);;
+	-webkit-clip-path: circle(65vmin at 50% 50%);
+	clip-path: circle(65vmin at 50% 50%);
 	-webkit-transition: all 1s ease-out; /* Safari */
 	transition: all 1s ease-out;
 	-webkit-animation: rainbow 8s infinite; /* Safari 4.0 - 8.0 */
@@ -74,22 +74,21 @@ p{
 }
 .floatingObj{
 	position: absolute;
-	top: calc(100vh + 10vmin);
+	top: calc(100vh + 20vmin);
 	-webkit-clip-path: circle(10vmin at 50% 50%);
-	clip-path: circle(10vmin at 50% 50%)
-	background: #c5fff3;
-	height: 10vmin;
-	width: 10vmin;
+	clip-path: circle(10vmin at 50% 50%);
+	background: rgba(255, 255, 255, .6);
+	height: 20vmin;
+	width: 20vmin;
 	-webkit-animation: floater 10s infinite; /* Safari 4.0 - 8.0 */
 	animation: floater 10s infinite;
 	-webkit-animation-timing-function: linear; /* Safari 4.0 - 8.0 */
-    	animation-timing-function: linear;
-	z-index: -1;
+    animation-timing-function: linear;
 }
 
 @keyframes floater{
-	0% {top: calc(100vh + 10vmin);}
-	100% {top: -10vmin;}
+	0% {top: calc(100vh + 20vmin);}
+	100% {top: -20vmin;}
 }
 @keyframes rainbow{
 	0%  {background: #FF0000;}
