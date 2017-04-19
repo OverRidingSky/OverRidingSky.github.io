@@ -77,3 +77,7 @@ footer > a > .item{
 footer > a > .item:hover{
 	color: #CCCCCC;
 }
+p{
+	padding: 1vw;
+	text-align: justify;
+}
