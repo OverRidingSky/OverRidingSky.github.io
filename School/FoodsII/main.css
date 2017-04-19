@@ -40,14 +40,14 @@ footer{
 	background: rgba(0,0,0,1);
 	width: 100%;
 	vertical-align: baseline;
-	font-size: 145%;
+	font-size: 1.1vw;
 }
 header > a > .item{
 	display: inline-block;
 	height: 100%;
 	width: 15%;
 	border-bottom: solid #FFFFFF 0.5vw;
-	font-size: 200%;
+	font-size: 2vw;
 	vertical-align: top;
 	-webkit-transition: all .5s ease-out; /* Safari */
     transition: all .5s ease-out;
