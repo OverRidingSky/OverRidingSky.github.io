@@ -1,0 +1,16 @@
+body{
+	margin: 0;
+	background: #333;
+}
+.loadingText{
+	position: absolute;
+	font-size: 5vmin;
+	color: #c00;
+	bottom: 5vh;
+}
+.loadingBar{
+	Position: absolute;
+	bottom: 0;
+	Background: #F00;
+	height:
+}
